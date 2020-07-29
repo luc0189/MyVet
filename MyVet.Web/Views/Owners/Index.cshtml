@@ -13,22 +13,7 @@
     <thead>
         <tr>
             <th>
-                @Html.DisplayNameFor(model => model.Document)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.FirstName)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Lastname)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.FixedPone)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.CellPhone)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.adrres)
+                @Html.DisplayNameFor(model => model.MyProperty)
             </th>
             <th></th>
         </tr>
@@ -37,22 +22,7 @@
 @foreach (var item in Model) {
         <tr>
             <td>
-                @Html.DisplayFor(modelItem => item.Document)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.FirstName)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Lastname)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.FixedPone)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.CellPhone)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.adrres)
+                @Html.DisplayFor(modelItem => item.MyProperty)
             </td>
             <td>
                 <a asp-action="Edit" asp-route-id="@item.id">Edit</a> |
