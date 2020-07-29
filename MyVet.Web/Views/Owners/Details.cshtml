@@ -1,0 +1,54 @@
+﻿@model MyVet.Web.Data.Entities.Owner
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Owner</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Document)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Document)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.FirstName)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.FirstName)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Lastname)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Lastname)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.FixedPone)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.FixedPone)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.CellPhone)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.CellPhone)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.adrres)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.adrres)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model.id">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>
